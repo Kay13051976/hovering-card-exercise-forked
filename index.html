@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hovering card</title>
+    <style>
+      body {
+        height: 100vh;
+
+        display: grid;
+        place-items: center;
+      }
+      h1 {
+        color: #ec1f1f;
+      }
+      .first-paragraph {
+        color: slateblue;
+        margin-top: 30px;
+      }
+      .second-paragraph {
+
+        margin-top: 40px; 
+
+        }
+      
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        margin-top: 50px;
+      }
+      .card {
+        width: 300px;
+        height: 400px;
+        text-align: center;
+
+        background-color: hsl(0, 53%, 80%);
+
+        border: solid 5px red;
+        border-radius: 5px;
+
+        box-shadow: 2px 2px 5px 0 #00000050;
+        animation: levitate 3s infinite;
+      }
+      
+      
+      
+      @keyframes levitate {
+        0% {
+          transform: translate(-50px, -50px);
+        }
+        15% {
+          transform: translate(-20px, -20px);
+        }
+
+        50% {
+          box-shadow: 8px 8px 16px red;
+          translate: translate(10px, -15px);
+        }
+        65% {
+          transform: translate(-60px, 30px);
+        }
+
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>halloween party</h1>
+      <p class="first-paragraph">
+        all the ghost need to register to arrange food and drink
+      </p>
+      <hr></hr>
+      <ul>
+        <li>Friday 29 Octerber 2021 (6pm-2am)</li>
+        <li>Saturday 30 Octerber 2021 (6pm-2pm)</li>
+        <li>Sunday 31 Octerber 2021 (6pm-6am)</li>
+      </ul>
+      <p  class="second-paragraph">For more information</p>
+      <a
+        href="https://www.bing.com/search?q=google+docs&cvid=923870fe83b44d769f655b7bfe484e9e&aqs=edge.4.69i57j0l6.6410j0j1&pglt=43&FORM=ANNTA1&PC=DCTS"
+        >click here</a
+      >
+    </div>
+  </body>
+</html>
